@@ -27,7 +27,7 @@ API_ID = int(environ.get("API_ID", ""))
 API_HASH = environ.get("API_HASH", "")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', 'https://envs.sh/_Rp.png')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://envs.sh/OQh.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1679112664').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "") # without @
 PORT = environ.get("PORT", "8080")
@@ -44,7 +44,7 @@ DB_URI = environ.get("DB_URI", "")
 DB_NAME = environ.get("DB_NAME", "ERASTREAM")
 
 # Auto Delete Information
-AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
+AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', False)) # Set True or False
 
 # If Auto Delete Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
@@ -58,15 +58,15 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 
 # Enable - True or Disable - False
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
 
 # Verify Info :-
 VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "teraboxlinks.com") # shortlink domain without https://
-SHORTLINK_API = environ.get("SHORTLINK_API", "4b7ded045ff9b38818660f6f96995288d6ca59e2") # shortlink api
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/+7ehnJA3aMb84OGNl") # how to open link 
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "Shortxlinks.com") # shortlink domain without https://
+SHORTLINK_API = environ.get("SHORTLINK_API", "5c96dd3948bca382cf9303ec4ace9e950062688d") # shortlink api
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/Allthingin1/24") # how to open link 
 
 # Website Info:
 WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', False)) # Set True or False
